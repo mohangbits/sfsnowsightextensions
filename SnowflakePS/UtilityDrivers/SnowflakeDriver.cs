@@ -275,7 +275,7 @@ $@"{{
 
         public static string GetWorksheets(AppUserContext authContext)
         {
-            string optionsParam = "{\"sort\":{\"col\":\"viewed\",\"dir\":\"desc\"},\"limit\":500,\"owner\":null,\"types\":[\"query\"],\"showNeverViewed\":\"if-invited\"}";
+            string optionsParam = "{\"sort\":{\"col\":\"viewed\",\"dir\":\"desc\"},\"limit\":5000,\"owner\":null,\"types\":[\"query\"],\"showNeverViewed\":\"if-invited\"}";
 
             string requestBody = String.Format("options={0}&location=worksheets", HttpUtility.UrlEncode(optionsParam));
 
